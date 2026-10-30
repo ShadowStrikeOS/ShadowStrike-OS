@@ -1,15 +1,15 @@
 <p align="center">
-  <img src="assets/org-logo-globe-suit.jpg" alt="ShadowStrike — the globe-head operator mark" width="320">
+  <img src="assets/org-logo-globe-suit.jpg" alt="ShadowStrike, the globe-head operator mark" width="320">
 </p>
 
 # ShadowStrike OS
 
-**A reproducible, customised Kali Linux platform for authorised security work — built on an Apple Silicon Mac, designed to be rebuilt from this repository.**
+**A reproducible, customised Kali Linux platform for authorised security work, built on an Apple Silicon Mac, designed to be rebuilt from this repository.**
 
 Operator: **Epsilon0xCell**
 Mark: the globe-head operator (see `assets/`). Silver is the mark, green is the signal. The static logo is never recoloured, never stretched, and never placed on a light background.
 
-> **Status: in active development.** What exists today is the design, the curated tool manifest, the dotfiles, and the provisioning scaffold (v1) in this repository. The full rig is not yet built, and this is **not** a finished, downloadable distribution. If the machine dies, the platform does not — it is rebuilt from here.
+> **Status: in active development.** What exists today is the design, the curated tool manifest, the dotfiles, and the provisioning scaffold (v1) in this repository. The full rig is not yet built, and this is **not** a finished, downloadable distribution. If the machine dies, the platform does not: it is rebuilt from here.
 
 ## Authorisation
 
@@ -22,27 +22,27 @@ One platform, three layers, plus a brain that lives in the cloud:
 ```text
   iPhone ──Tailscale──► Apple Silicon Mac (host)
                               │
-                              ├─ Layer 1: OrbStack Kali machine  — daily driver
-                              └─ Layer 2: native ARM64 Kali VM   — kernel layer
+                              ├─ Layer 1: OrbStack Kali machine : daily driver
+                              └─ Layer 2: native ARM64 Kali VM  : kernel layer
                                         │
   Cloud brain: Venice + abliterated model, experience store on Agent Zero
 ```
 
-### Layer 0 — The host: Apple Silicon Mac
+### Layer 0, The host: Apple Silicon Mac
 
 The Mac is the attack box and the only physical machine in the design.
 
 - **Terminal:** Ghostty with a custom shell configuration. Tiling happens in the terminal (tmux sessions and panes), not in a tiling window manager.
-- **Remote access:** an iPhone reaches the Mac over **Tailscale** (Blink / Termius) — a private mesh link only. There is **no internet-exposed SSH**.
+- **Remote access:** an iPhone reaches the Mac over **Tailscale** (Blink / Termius), a private mesh link only. There is **no internet-exposed SSH**.
 - **Containers and machines first:** day-to-day work runs in OrbStack containers and machines. A heavyweight VM is the exception, not the default.
 
-### Layer 1 — The daily driver: OrbStack Kali machine
+### Layer 1, The daily driver: OrbStack Kali machine
 
 A customised Kali Linux machine running in OrbStack on ARM64. It carries the terminal workflow, the 56-tool manifest, the dotfiles, and day-to-day engagement work, and it stays light, fast, and disposable by design.
 
-OrbStack runs one shared kernel of its own for every machine, so this layer gets its Kali kernel features by **parity, not by replacement**: `kernel-parity/` holds a read-only audit that measures which features the shared kernel already has, plus an experimental, clearly-labelled route for the one out-of-tree wireless driver the platform misses. Whatever parity cannot deliver is routed to Layer 2 — never forced into the daily driver.
+OrbStack runs one shared kernel of its own for every machine, so this layer gets its Kali kernel features by **parity, not by replacement**: `kernel-parity/` holds a read-only audit that measures which features the shared kernel already has, plus an experimental, clearly-labelled route for the one out-of-tree wireless driver the platform misses. Whatever parity cannot deliver is routed to Layer 2, never forced into the daily driver.
 
-### Layer 2 — The kernel layer: native ARM64 Kali VM
+### Layer 2, The kernel layer: native ARM64 Kali VM
 
 A real virtual machine from the official Kali Linux ARM64 installer, reserved for kernel work and the small set of jobs containers and parity cannot do:
 
@@ -56,7 +56,7 @@ The host is the hands; the cloud is the brain. Model access runs through **Venic
 
 ### Flagship workload
 
-The platform exists to run the operator's flagship program, **NightSalvo** — an autonomous security-systems program — alongside the curated manual tooling below.
+The platform exists to run the operator's flagship program, **NightSalvo**, an autonomous security-systems program, alongside the curated manual tooling below.
 
 ## Tooling: a loadout, not a warehouse
 
@@ -77,13 +77,13 @@ Kali's full install is a warehouse. A flagship platform is a loadout. `tool-mani
 
 Highlights: the ProjectDiscovery suite for recon and scanning, NetExec and Certipy for Active Directory, Caido as the intercepting proxy, Prowler for cloud, Sliver as the manual-install C2, and a tight set of terminal staples. Everything else is installed per engagement, recorded in the manifest first, and removed when the engagement closes.
 
-Version pins are only written in the manifest where verified against a tool's public release page. Everything else is marked `UNPINNED` — the provision installs the current release and `sbom.sh` records the exact version that landed. An honest `UNPINNED` beats an invented pin, and the SBOM proves what is actually installed.
+Version pins are only written in the manifest where verified against a tool's public release page. Everything else is marked `UNPINNED`: the provision installs the current release and `sbom.sh` records the exact version that landed. An honest `UNPINNED` beats an invented pin, and the SBOM proves what is actually installed.
 
 ## Repository layout
 
 | Path | Purpose |
 | --- | --- |
-| `provision.sh` | Idempotent provisioning scaffold, run inside a fresh OrbStack Kali machine. Supports `--dry-run`, which prints every action — including every `sudo` call — and changes nothing. |
+| `provision.sh` | Idempotent provisioning scaffold, run inside a fresh OrbStack Kali machine. Supports `--dry-run`, which prints every action, including every `sudo` call, and changes nothing. |
 | `tool-manifest.csv` | The curated 56-tool manifest (category, source, version pin, licence, purpose). |
 | `dotfiles/` | zsh, tmux, fastfetch, MOTD, and the prompt fallback note. |
 | `assets/` | The organisation logo; wallpaper and lock-screen source. |
@@ -110,7 +110,7 @@ The platform is scaffold-first. The intended order, once the rig build runs:
 
 - Complete the first full provision of the OrbStack daily driver from the v1 scaffold and snapshot it.
 - Close out the kernel-parity table; keep the ARM64 VM scoped to kernel, USB, and nested-virtualisation work only.
-- Exercise the full remote loop — iPhone over Tailscale into Ghostty on the host, into the daily driver — as the standard way of working.
+- Exercise the full remote loop, iPhone over Tailscale into Ghostty on the host, into the daily driver, as the standard way of working.
 - Wire the cloud brain and the Agent Zero experience store into the daily workflow, so engagement lessons persist by default.
 - Keep the manifest curated: tools enter by decision and leave at engagement close; the SBOM stays the proof.
 

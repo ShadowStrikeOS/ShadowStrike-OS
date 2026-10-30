@@ -1,0 +1,54 @@
+{
+  // ShadowStrike OS fastfetch configuration.
+  // The logo block is a terminal rendering of the globe head mark.
+  // Green keys on black, in the live register of the theme.
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "file",
+    "source": "~/.config/fastfetch/logo.txt",
+    "color": {
+      "1": "green"
+    },
+    "padding": {
+      "right": 3
+    }
+  },
+  "display": {
+    "separator": "  ",
+    "color": {
+      "keys": "green",
+      "title": "green"
+    }
+  },
+  "modules": [
+    {
+      "type": "title",
+      "format": "SHADOWSTRIKE OS"
+    },
+    {
+      "type": "custom",
+      "text": "operator: Epsilon0xCell"
+    },
+    "separator",
+    {
+      "type": "os",
+      "key": "OS"
+    },
+    {
+      "type": "kernel",
+      "key": "Kernel"
+    },
+    {
+      "type": "shell",
+      "key": "Shell"
+    },
+    {
+      "type": "terminal",
+      "key": "Terminal"
+    },
+    {
+      "type": "uptime",
+      "key": "Uptime"
+    }
+  ]
+}

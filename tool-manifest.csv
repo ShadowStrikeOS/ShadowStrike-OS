@@ -1,0 +1,57 @@
+name,category,source,version_pin,licence,purpose
+zsh,terminal,apt,UNPINNED,GPL-2.0,Primary shell for the platform workflow
+tmux,terminal,apt,UNPINNED,BSD-3-Clause,Terminal multiplexing and session persistence
+fastfetch,terminal,apt,UNPINNED,MIT,Login system summary with the globe logo block
+starship,terminal,github-release,UNPINNED,ISC,Cross shell prompt when installed; zshrc falls back without it
+ripgrep,terminal,apt,UNPINNED,MIT,Fast recursive search across notes and code
+fd-find,terminal,apt,UNPINNED,MIT,Fast file finding (binary name fdfind on Debian based systems)
+bat,terminal,apt,UNPINNED,MIT,File viewing with syntax highlighting (binary name batcat)
+jq,terminal,apt,UNPINNED,MIT,JSON processing for tool output pipelines
+fzf,terminal,apt,UNPINNED,MIT,Fuzzy finding for history files and notes
+subfinder,recon,go,v2.17.0,MIT,Passive subdomain enumeration from many sources
+dnsx,recon,go,UNPINNED,MIT,DNS probing resolution and wildcard handling
+naabu,recon,go,UNPINNED,MIT,Fast port scanning ahead of service enumeration
+httpx,recon,go,UNPINNED,MIT,HTTP probing of live hosts with tech detection
+katana,recon,go,UNPINNED,MIT,Web crawling for endpoint discovery
+amass,recon,go,UNPINNED,Apache-2.0,Deep attack surface enumeration and asset graphing
+nmap,recon,apt,UNPINNED,Nmap Public Source License,Service and version enumeration standard
+masscan,recon,apt,UNPINNED,Apache-2.0,Very fast large scope port sweeps
+gowitness,recon,go,UNPINNED,GPL-3.0,Screenshot evidence of web services at scale
+nuclei,web,go,UNPINNED,MIT,Template based vulnerability scanning
+ffuf,web,apt,UNPINNED,MIT,Content and parameter fuzzing
+gobuster,web,apt,UNPINNED,Apache-2.0,Directory DNS and vhost brute forcing
+feroxbuster,web,apt,UNPINNED,MIT,Recursive content discovery
+nikto,web,apt,UNPINNED,GPL-2.0,Web server configuration and known issue checks
+whatweb,web,apt,UNPINNED,GPL-2.0,Web technology fingerprinting
+sqlmap,web,apt,UNPINNED,GPL-2.0,Automated SQL injection detection and verification
+wpscan,web,manual,UNPINNED,GPL-3.0,WordPress vulnerability scanning
+zaproxy,web,apt,UNPINNED,Apache-2.0,Scriptable web proxy and scanner for manual testing
+caido,web,manual,UNPINNED,Proprietary,Intercepting proxy for manual web work; free tier available
+netexec,active-directory,pipx,v1.4.0,BSD-3-Clause,Network service enumeration and authenticated checks across AD protocols
+certipy,active-directory,pipx,5.1.0,GPL-3.0,AD Certificate Services enumeration and abuse (package certipy-ad)
+impacket,active-directory,pipx,UNPINNED,Apache-2.0,SMB Kerberos and Windows protocol toolkit and examples
+responder,active-directory,apt,UNPINNED,GPL-3.0,LLMNR NBT-NS and MDNS poisoning analysis on authorised lab networks
+bloodhound-ce,active-directory,manual,9.8.0,Apache-2.0,AD attack path graphing; server runs as its own stack
+enum4linux-ng,active-directory,pipx,UNPINNED,GPL-3.0,SMB and LDAP enumeration for Windows and Samba hosts
+coercer,active-directory,pipx,UNPINNED,GPL-3.0,Windows authentication coercion checks for relay assessment
+bloodyad,active-directory,pipx,UNPINNED,GPL-3.0,AD privilege escalation and object manipulation via LDAP
+prowler,cloud,pipx,UNPINNED,Apache-2.0,Cloud security assessment across AWS Azure and GCP
+pacu,cloud,pipx,UNPINNED,BSD-3-Clause,AWS exploitation and post exploitation framework for lab accounts
+scoutsuite,cloud,pipx,UNPINNED,GPL-2.0,Multi cloud security auditing with report output
+cloudfox,cloud,go,UNPINNED,Apache-2.0,Cloud attack surface enumeration for AWS and Azure
+awscli,cloud,apt,UNPINNED,Apache-2.0,Official AWS command line for cloud engagement work
+hashcat,credentials,apt,UNPINNED,MIT,GPU and CPU password recovery against captured lab hashes
+john,credentials,apt,UNPINNED,GPL-2.0,Password auditing with broad format support
+hydra,credentials,apt,UNPINNED,AGPL-3.0,Network logon auditing where lockout risk is accepted in scope
+medusa,credentials,apt,UNPINNED,GPL-2.0,Parallel network logon auditing alternative
+seclists,credentials,apt,UNPINNED,MIT,Curated wordlists payloads and fuzzing lists
+metasploit-framework,exploitation-framework,apt,UNPINNED,BSD-3-Clause,Exploit framework for verified vulnerabilities in scope
+exploitdb,exploitation-framework,apt,UNPINNED,GPL-2.0,Local exploit archive searched with searchsploit
+sliver,exploitation-framework,manual,UNPINNED,GPL-3.0,Implant C2 framework installed manually per engagement
+chisel,post-exploitation,go,UNPINNED,MIT,TCP and UDP tunnelling over HTTP for pivoting
+ligolo-ng,post-exploitation,go,UNPINNED,GPL-3.0, TUN based pivoting without SOCKS limitations
+linpeas,post-exploitation,manual,UNPINNED,GPL-3.0,Linux privilege escalation enumeration script from PEASS
+pandoc,reporting,apt,UNPINNED,GPL-2.0,Document conversion for engagement reports
+mdbook,reporting,go,UNPINNED,MPL-2.0,Static book style rendering of notes and playbooks
+ghostwriter,reporting,manual,UNPINNED,BSD-3-Clause,Collaborative report writing platform run as its own stack
+faraday,reporting,manual,UNPINNED,GPL-3.0,Vulnerability management workspace run as its own stack

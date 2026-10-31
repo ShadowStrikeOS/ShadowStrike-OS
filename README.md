@@ -117,3 +117,9 @@ The platform is scaffold-first. The intended order, once the rig build runs:
 ## Rebuilds and updates
 
 Snapshot before every provision change; run `sbom.sh` and snapshot again after it. The kernel-parity audit is re-run after every OrbStack update, because a shared-kernel update can change the parity table overnight.
+
+## Diagrams and maps
+
+I drew the platform out in [ShadowStrike-OS-Visuals](ShadowStrike-OS-Visuals/): an architecture diagram, a components diagram of the files in this repo, a flowchart of the build order, and a product map, with the written product map, statistics with citations, and the roadmap in [VISUAL.md](ShadowStrike-OS-Visuals/VISUAL.md). Every sheet also ships as a PNG photograph of the paper page beside its SVG.
+
+![ShadowStrike OS architecture](ShadowStrike-OS-Visuals/architecture.svg)

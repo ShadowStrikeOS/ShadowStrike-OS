@@ -56,7 +56,7 @@ The host is the hands; the cloud is the brain. Model access runs through **Venic
 
 ### Flagship workload
 
-The platform exists to run the operator's flagship program, **NightSalvo**, an autonomous security-systems program, alongside the curated manual tooling below.
+The platform exists to run the operator's flagship program, **NightStrike**, an autonomous security-systems program, alongside the curated manual tooling below.
 
 ## Tooling: a loadout, not a warehouse
 
